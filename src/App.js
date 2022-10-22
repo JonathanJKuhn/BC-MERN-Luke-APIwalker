@@ -7,17 +7,17 @@ import Planets from './components/Planets'
 import Search from './components/Search';
 
 function App() {
-    return (
-        <Container className='mt-5'>
-          <BrowserRouter> 
-          <Search />
-            <Routes>
-              <Route path='/people/:id' element={<People />} />
-              <Route path='/planets/:id' element={<Planets />} />
-            </Routes>
-          </BrowserRouter>
-        </Container>
-    );
+  return (
+      <Container className='mt-5'>
+        <BrowserRouter> 
+        <Search />
+          <Routes>
+            <Route path='/people/:id' element={<People />} />
+            <Route path='/planets/:id' element={<Planets />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
+  );
 }
 
 export default App;

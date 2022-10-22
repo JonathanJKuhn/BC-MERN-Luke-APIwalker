@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 
 const Search = () => {
     const navigate = useNavigate()
-    const [search, setSearch] = useState('')
-    const [id, setId] = useState(0)
+    const [search, setSearch] = useState('people')
+    const [id, setId] = useState()
 
     const handleSearchChange = (e) => {
         setSearch(e.target.value)
@@ -39,7 +39,7 @@ const Search = () => {
                     </Form.Group>
                 </Col>
                 <Col sm={2}>
-                    <Form.Group as={Row} controldID='formSearchIdInput'>
+                    <Form.Group as={Row} controldId='formSearchIdInput'>
                         <Form.Label column sm={2}>ID:</Form.Label>
                         <Col sm={9}>
                             <Form.Control type='number' onChange={handleIdChange} />
